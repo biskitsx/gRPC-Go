@@ -1,0 +1,10 @@
+syntax = "proto3";
+option go_package="./services";
+
+package services ;
+// ใน enum ควรมี UNKNOW = 0 ไม่งั้นหาก client ไม่ได้อัปเดตจะได้ค่า 0 อัติโนมัติ
+enum Gender { 
+    UNKNOWN = 0; 
+    MALE = 1;
+    FEMALE = 2;
+}
